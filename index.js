@@ -3,10 +3,15 @@ let BlueTacCount=0
 let BlueCritCount=0
 let BlueCP=0
 let TurningPoint=0
-
+let OrangeCP=0
 let OrangeKillCount=0
 let OrangeTacCount=0
 let OrangeCritCount=0
+
+document.getElementById("IncreaseKillBlue").onclick = function(){
+    BlueKillCount+=1
+    document.getElementById("BlueKillCount").innerHTML =BlueKillCount;
+}
 
 document.getElementById("DecreaseKillBlue").onclick = function(){
     BlueKillCount-=1
@@ -17,9 +22,10 @@ document.getElementById("DecreaseKillBlue").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseKillBlue").onclick = function(){
-    BlueKillCount+=1
-    document.getElementById("BlueKillCount").innerHTML =BlueKillCount;
+
+document.getElementById("IncreaseTacBlue").onclick = function(){
+    BlueTacCount+=1
+    document.getElementById("BlueTacCount").innerHTML =BlueTacCount;
 }
 
 document.getElementById("DecreaseTacBlue").onclick = function(){
@@ -31,11 +37,11 @@ document.getElementById("DecreaseTacBlue").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseTacBlue").onclick = function(){
-    BlueTacCount+=1
-    document.getElementById("BlueTacCount").innerHTML =BlueTacCount;
-}
 
+document.getElementById("IncreaseCritBlue").onclick = function(){
+    BlueCritCount+=1
+    document.getElementById("BlueCritCount").innerHTML =BlueCritCount;
+}
 document.getElementById("DecreaseCritBlue").onclick = function(){
     BlueCritCount-=1
     if(BlueCritCount<=0){
@@ -45,11 +51,12 @@ document.getElementById("DecreaseCritBlue").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseCritBlue").onclick = function(){
-    BlueCritCount+=1
-    document.getElementById("BlueCritCount").innerHTML =BlueCritCount;
-}
 
+
+document.getElementById("IncreaseCPBlue").onclick = function(){
+    BlueCP+=1
+    document.getElementById("BlueCP").innerHTML =BlueCP;
+}
 document.getElementById("DecreaseCPBlue").onclick = function(){
     BlueCP-=1
     if(BlueCP<=0){
@@ -59,14 +66,15 @@ document.getElementById("DecreaseCPBlue").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseCPBlue").onclick = function(){
-    BlueCritCount+=1
-    document.getElementById("BlueCP").innerHTML =BlueCritCount;
+
+
+
+
+
+document.getElementById("IncreaseTurningPoint").onclick = function(){
+    TurningPoint+=1
+    document.getElementById("TurnPointCount").innerHTML =TurningPoint;
 }
-
-
-
-
 
 document.getElementById("DecreaseTurningPoint").onclick = function(){
     TurningPoint-=1
@@ -77,14 +85,13 @@ document.getElementById("DecreaseTurningPoint").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseTurningPoint").onclick = function(){
-    TurningPoint+=1
-    document.getElementById("TurnPointCount").innerHTML =TurningPoint;
+
+
+
+document.getElementById("IncreaseKillOrange").onclick = function(){
+    OrangeKillCount+=1
+    document.getElementById("OrangeKillCount").innerHTML =OrangeKillCount;
 }
-
-
-
-
 document.getElementById("DecreaseKillOrange").onclick = function(){
     OrangeKillCount-=1
     if(OrangeKillCount<=0){
@@ -94,11 +101,11 @@ document.getElementById("DecreaseKillOrange").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseKillOrange").onclick = function(){
-    OrangeKillCount+=1
-    document.getElementById("OrangeKillCount").innerHTML =OrangeKillCount;
-}
 
+document.getElementById("IncreaseTacOrange").onclick = function(){
+    OrangeTacCount+=1
+    document.getElementById("OrangeTacCount").innerHTML =OrangeTacCount;
+}
 document.getElementById("DecreaseTacOrange").onclick = function(){
     OrangeKillCount-=1
     if(OrangeKillCount<=0){
@@ -108,11 +115,11 @@ document.getElementById("DecreaseTacOrange").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseTacOrange").onclick = function(){
-    OrangeTacCount+=1
-    document.getElementById("OrangeTacCount").innerHTML =OrangeTacCount;
-}
 
+document.getElementById("IncreaseCritOrange").onclick = function(){
+    OrangeCritCount+=1
+    document.getElementById("OrangeCritCount").innerHTML =OrangeCritCount;
+}
 document.getElementById("DecreaseCritOrange").onclick = function(){
     OrangeCritCount-=1
     if(OrangeCritCount<=0){
@@ -122,9 +129,10 @@ document.getElementById("DecreaseCritOrange").onclick = function(){
     }
     
 }
-document.getElementById("IncreaseCritOrange").onclick = function(){
-    OrangeCritCount+=1
-    document.getElementById("OrangeCritCount").innerHTML =OrangeCritCount;
+
+document.getElementById("IncreaseCPOrange").onclick = function(){
+    OrangeCP+=1
+    document.getElementById("OrangeCP").innerHTML =OrangeCP;
 }
 
 document.getElementById("DecreaseCPOrange").onclick = function(){
@@ -135,9 +143,5 @@ document.getElementById("DecreaseCPOrange").onclick = function(){
         document.getElementById("OrangeCP").innerHTML =OrangeCP;
     }
     
-}
-document.getElementById("IncreaseCPOrange").onclick = function(){
-    OrangeCritCount+=1
-    document.getElementById("OrangeCP").innerHTML =OrangeCritCount;
 }
 
