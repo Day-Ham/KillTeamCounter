@@ -29,8 +29,8 @@ document.getElementById("IncreaseTacBlue").onclick = function(){
 }
 
 document.getElementById("DecreaseTacBlue").onclick = function(){
-    BlueKillCount-=1
-    if(BlueKillCount<=0){
+    BlueTacCount-=1
+    if(BlueTacCount<=0){
         document.getElementById("BlueTacCount").innerHTML =0;
     }else{
         document.getElementById("BlueTacCount").innerHTML =BlueTacCount;
@@ -107,8 +107,8 @@ document.getElementById("IncreaseTacOrange").onclick = function(){
     document.getElementById("OrangeTacCount").innerHTML =OrangeTacCount;
 }
 document.getElementById("DecreaseTacOrange").onclick = function(){
-    OrangeKillCount-=1
-    if(OrangeKillCount<=0){
+    OrangeTacCount-=1
+    if(OrangeTacCount<=0){
         document.getElementById("OrangeTacCount").innerHTML =0;
     }else{
         document.getElementById("OrangeTacCount").innerHTML =OrangeTacCount;
